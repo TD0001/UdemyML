@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 incomes = np.random.normal(27000,15000,10000)
 # np.mean(incomes)
 print(incomes)
+
 print(np.mean(incomes))
 plt.hist(incomes,50)
 plt.show()
