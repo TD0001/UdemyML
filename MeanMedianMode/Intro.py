@@ -9,10 +9,15 @@ plt.hist(incomes,50)
 plt.show()
 
 print("----------")
-ages = np.random.randint(18, high=90,size=501)
-print(ages)
+ages = np.random.randint(18, high=90,size=5)
+print(sorted(ages))
+
 
 import scipy.stats as stat
 statistic = stat.mode(ages)
 print(statistic)
-print(np.median(ages))
+print(" median = ",np.median(ages))
+print(" mean = ",np.mean(ages))
+print(" variance = ",np.var(ages))
+print(" skewness = ", stat.skew(ages))
+print(" kurtosis = ", stat.kurtosis(ages))

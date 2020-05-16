@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import scipy.stats as sp
 
 vals = np.random.normal(0, 0.5, 10000)
 
@@ -13,3 +14,9 @@ print(a)
 
 b = np.var(vals)
 print(b)
+
+c = sp.skew(vals)
+print(c)
+
+d = sp.kurtosis(vals)
+print(d)
