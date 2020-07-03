@@ -34,3 +34,11 @@ print(len(x))
 print("\n try boolean")
 print((1+1)==3)
 print((1+1)==2)
+
+l = [1,2,3,4,5,6,7,8,9,10]
+
+h = l[2:]
+t = l[:8]
+
+print(h)
+print(t)

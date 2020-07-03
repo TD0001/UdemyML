@@ -16,9 +16,14 @@ purchaseAmount = np.random.normal(50.0, 10.0, 1000)
 
 scatter(pageSpeeds, purchaseAmount)
 
+
+print(pageSpeeds)
+print('---------------------------------------LMAO---------------------')
 print(de_mean([1,2,3,4,5]))
 
 co = covariance (pageSpeeds, purchaseAmount)
 print(co)
-
+print("--------------------------")
+co_by_numpy = np.cov(pageSpeeds, purchaseAmount)
+print("covariance by numpy: ", co_by_numpy)
 plt.show()
